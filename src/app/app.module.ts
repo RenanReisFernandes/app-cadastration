@@ -7,6 +7,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CadastrationComponent } from './pages/cadastration/cadastration.component';
 import { NavBarComponent } from './_components/nav-bar/nav-bar.component';
+import { FooterComponent } from './_components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavBarComponent } from './_components/nav-bar/nav-bar.component';
     HomeComponent,
     LoginComponent,
     CadastrationComponent,
-    NavBarComponent
+    NavBarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
