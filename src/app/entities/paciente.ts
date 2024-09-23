@@ -1,7 +1,8 @@
 export class Paciente {
-   id: number;
-   nome: string;
-   sobrenome: string;
-   cpf: string;
-   email: string;
+  id: number;
+  nome: string;
+  sobrenome: string;
+  cpf: string;
+  email: string;
+
 }

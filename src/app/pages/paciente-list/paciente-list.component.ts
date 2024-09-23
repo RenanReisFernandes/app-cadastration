@@ -12,6 +12,21 @@ export class PacienteListComponent {
 
   constructor(){}
   ngOnInit(): void{
+    this.pacientes = [{
+      "id": 1,
+      "nome":"Renan",
+      "sobrenome":"Reis",
+      "cpf":"1234",
+      "email":"renan@renan.com"
+    },
+    {
+      "id": 2,
+      "nome":"Maria",
+      "sobrenome":"Mariana",
+      "cpf":"4321",
+      "email":"maria@maria.com"
+
+    }]
 
   }
 }
