@@ -8,7 +8,7 @@ import { Paciente } from '../../entities/paciente';
 })
 export class PacienteListComponent {
 
-  pacientes: Paciente[];
+  pacientes: Paciente[]=[];
 
   constructor(){}
   ngOnInit(): void{
