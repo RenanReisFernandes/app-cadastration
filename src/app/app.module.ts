@@ -8,6 +8,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { CadastrationComponent } from './pages/cadastration/cadastration.component';
 import { NavBarComponent } from './_components/nav-bar/nav-bar.component';
 import { FooterComponent } from './_components/footer/footer.component';
+import { PacienteListComponent } from './pages/paciente-list/paciente-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FooterComponent } from './_components/footer/footer.component';
     LoginComponent,
     CadastrationComponent,
     NavBarComponent,
-    FooterComponent
+    FooterComponent,
+    PacienteListComponent
   ],
   imports: [
     BrowserModule,
