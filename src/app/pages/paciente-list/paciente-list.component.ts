@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Paciente } from '../../entities/paciente';
 
 @Component({
   selector: 'app-paciente-list',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class PacienteListComponent {
 
+  pacientes: Paciente[];
+
+  constructor(){}
+  ngOnInit(): void{
+
+  }
 }
