@@ -1,0 +1,21 @@
+<h2>Lista de pacientes</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Sobrenome</th>
+      <th>cpf</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let pacientes of pacientes">
+      <td>{{pacientes.nome}}</td>
+      <td>{{pacientes.sobrenome}}</td>
+      <td>{{pacientes.cpf}}</td>
+      <td>{{pacientes.email}}</td>
+
+    </tr>
+  </tbody>
+</table>
