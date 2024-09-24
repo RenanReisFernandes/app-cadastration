@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Paciente } from '../../entities/paciente';
+import { PacienteService } from '../../services/paciente.service';
 
 @Component({
   selector: 'app-paciente-list',
@@ -8,25 +9,17 @@ import { Paciente } from '../../entities/paciente';
 })
 export class PacienteListComponent {
 
-  pacientes: Paciente[];
+  pacientes: Paciente[]=[];
 
-  constructor(){}
+  constructor(private pacienteService: PacienteService){}
   ngOnInit(): void{
-    this.pacientes = [{
-      "id": 1,
-      "nome":"Renan",
-      "sobrenome":"Reis",
-      "cpf":"1234",
-      "email":"renan@renan.com"
-    },
-    {
-      "id": 2,
-      "nome":"Maria",
-      "sobrenome":"Mariana",
-      "cpf":"4321",
-      "email":"maria@maria.com"
+   this.getPacientes();
 
-    }]
+  }
 
+  private getPacientes(){
+    this.pacienteService.getPacienteList().subscribe(data =>{
+      this.pacientes = data;
+    })
   }
 }
