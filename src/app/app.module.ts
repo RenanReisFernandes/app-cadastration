@@ -9,6 +9,7 @@ import { CadastrationComponent } from './pages/cadastration/cadastration.compone
 import { NavBarComponent } from './_components/nav-bar/nav-bar.component';
 import { FooterComponent } from './_components/footer/footer.component';
 import { PacienteListComponent } from './pages/paciente-list/paciente-list.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PacienteListComponent } from './pages/paciente-list/paciente-list.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
